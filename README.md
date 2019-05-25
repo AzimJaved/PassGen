@@ -2,8 +2,13 @@
 
 [![HitCount](http://hits.dwyl.io/AzimJaved/passgen.svg)](http://hits.dwyl.io/AzimJaved/passgen)
 
+
 This takes 2 inputs : A key and length, and generates a password that may have an upper Case and a lower case letter, A number, and a Special Character. 
 The key has to be alphabetical, lowercase.
+
+```
+node passgen.js key length
+```
 
 ### How does it work
 
