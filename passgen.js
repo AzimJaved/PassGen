@@ -17,11 +17,13 @@ function generatePassword(key, length){
     for(i=91; i<100;i++){
         charMap[i]=key.charAt(i-92)
     }
+    console.log(charMap[06])
     if(Math.log10(primeHash) >= length*2){
         for(i=0; i<2*length; i+=2){
-            var str = primeHash % 10;
+            var str = (primeHash % 10).toString()
             primeHash /= 10;
-            str += primeHash % 10
+            str += (primeHash % 10).toString()
+            str = parseInt(str)
             pass = pass + charMap[str]
         }
         console.log("Your Password is "+ pass)
